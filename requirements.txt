@@ -1,0 +1,5 @@
+numpy>=1.24
+# only needed for prepare_data.py (reading the .mat file)
+scipy>=1.10
+# only needed for tests
+pytest>=7
