@@ -1,8 +1,6 @@
 # Mutational signatures from scratch
 
-Find mutational processes in cancer genomes with nothing but numpy. Everything
-here follows the five-part post "5 cancer genomics projects you can do at home
-with Claude" (@thebiosciencedesk).
+Find mutational processes in cancer genomes with nothing but numpy. 
 
 The pipeline:
 
@@ -19,8 +17,6 @@ pip install -r requirements.txt
 python run_analysis.py
 python tests/test_slides.py   # or: python -m pytest -q
 ```
-
-Python 3.10+ and numpy are required. scipy is only needed to regenerate the data.
 
 ## Data
 
@@ -66,7 +62,3 @@ These differences are reported as found, not adjusted to match the slide.
 - A signature is a pattern, not a mechanism. Calling one "APOBEC" is an inference from cosine similarity.
 - Flat signatures (such as SBS3 vs SBS40c) are hard to tell apart. This is an open problem in the field.
 
-## Credit
-
-Analysis outline and code from @thebiosciencedesk. Breast cancer genomes and the matrix are distributed with
-SigProfiler. COSMIC signatures are from the COSMIC project (Sanger Institute).
